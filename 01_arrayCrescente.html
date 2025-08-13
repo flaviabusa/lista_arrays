@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-
+    const n1 = Number(prompt(`Insira um número:`));
+    const n2 = Number(prompt(`Agora insira outro número:`));
 
     //PROCESSAMENTO
+    let num = 0;
 
+    if(n1 < n2){
+        num = [n1, n2];
+    }
+    else{
+        num = [n2, n1];
+    } 
 
     //SAÍDA
-
+    alert(num.join(" - "));
 </script>
