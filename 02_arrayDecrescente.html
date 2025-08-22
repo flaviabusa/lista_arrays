@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+    const num1 = Number(prompt(`Insira o primeiro número:`));
+    const num2 = Number(prompt(`Insira o segundo número:`));
+    const num3 = Number(prompt(`Insira o terceiro número:`));
 
     //PROCESSAMENTO
+    const numeros = [num1, num2, num3];
+    numeros.sort((a, b) => b-a);
 
 
     //SAÍDA
-
+    alert(numeros.join(" - "));
 </script>
