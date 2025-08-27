@@ -13,11 +13,59 @@
     */
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    const veiculo1 = prompt(`Informe o primeiro veículo para adicionar a lista:` );
+    const veiculo2 = prompt(`Informe o segundo veículo:`);
+    const veiculo3 = prompt(`Informe o terveiro veículo: `);
 
+    const tipoVeiculo1 = Number(prompt(`Informe se ${veiculo1} é: 1 - SUV, 2 - Sedan, 3 - Hatch`));
+    const tipoVeiculo2 = Number(prompt(`Informe se ${veiculo2} é: 1 - SUV, 2 - Sedan, 3 - Hatch`));
+    const tipoVeiculo3 = Number(prompt(`Informe se ${veiculo3} é: 1 - SUV, 2 - Sedan, 3 - Hatch`));
 
     //PROCESSAMENTO
+    if (tipoVeiculo1 === 1) {
+        carrosSUV.push(veiculo1);
+    } 
+    else if (tipoVeiculo1 === 2) {
+        carrosSedan.push(veiculo1);
+    } 
+    else if (tipoVeiculo1 === 3 ) {
+        carrosHatch.push(veiculo1);
+    }
+    else {
+        alert(`Valores inválidos.`);
+    }
 
+    if (tipoVeiculo2 === 1) {
+        carrosSUV.push(veiculo2);
+    } 
+    else if (tipoVeiculo2 === 2) {
+        carrosSedan.push(veiculo2);
+    } 
+    else if (tipoVeiculo2 === 3 ) {
+        carrosHatch.push(veiculo2);
+    }
+    else {
+        alert(`Valores inválidos.`);
+    }
+
+    if (tipoVeiculo3 === 1) {
+        carrosSUV.push(veiculo3);
+    } 
+    else if (tipoVeiculo3 === 2) {
+        carrosSedan.push(veiculo3);
+    } 
+    else if (tipoVeiculo3 === 3 ) {
+        carrosHatch.push(veiculo3);
+    }
+    else {
+        alert(`Valores inválidos.`);
+    }
 
     //SAÍDA
+    document.write(`A lista final de veículos SUV é: ${carrosSUV.join(" - ")} <br> A lista final de veículos Sedan é: ${carrosSedan.join(" - ")} <br> A lista final de veículos Hatch é: ${carrosHatch.join(" - ")}`);
 
 </script>
